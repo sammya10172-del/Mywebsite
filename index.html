@@ -3,18 +3,28 @@
 
 <head>
 
-<title>Product Website</title>
+<title>Gaming Store</title>
 
 <style>
 
 body{
-  background:black;
-  color:white;
+  background:#111;
   font-family:Arial;
+  color:white;
   text-align:center;
 }
 
-.card{
+/* TOP HEADING */
+
+.store-title{
+  color:orange;
+  margin-top:20px;
+  font-size:40px;
+}
+
+/* FIRST PRODUCT */
+
+.main-card{
 
   background:black;
 
@@ -22,7 +32,7 @@ body{
 
   margin:auto;
 
-  margin-top:100px;
+  margin-top:50px;
 
   padding:20px;
 
@@ -30,14 +40,47 @@ body{
 
 }
 
-img{
+.main-card img{
   width:100%;
   border-radius:20px;
 }
 
-h1{
-  color:orange;
+/* PRODUCT CONTAINER */
+
+.container{
+
+  display:flex;
+
+  justify-content:center;
+
+  gap:20px;
+
+  flex-wrap:wrap;
+
+  margin-top:50px;
+
 }
+
+/* PRODUCT CARD */
+
+.card{
+
+  background:#222;
+
+  width:250px;
+
+  padding:20px;
+
+  border-radius:20px;
+
+}
+
+.card img{
+  width:100%;
+  border-radius:15px;
+}
+
+/* BUTTON */
 
 button{
 
@@ -58,21 +101,33 @@ button:hover{
   transform:scale(1.1);
 }
 
+h1{
+  color:orange;
+}
+
 </style>
 
 </head>
 
 <body>
 
-<div class="card">
+<!-- TOP HEADING -->
+
+<h1 class="store-title">🔥 MY GAMING STORE 🔥</h1>
+
+<!-- MAIN PRODUCT -->
+
+<div class="main-card">
 
 <img src="https://images.unsplash.com/photo-1542751110-97427bbecf20?w=1000">
 
-<h1>Ipad 11th Gen </h1>
+<h1>Ipad 11th Gen</h1>
 
-<h1> Best Student Budget Ipad 🔥</h1>
-<h1> Price: 43999 TK Only</h1>
-<a href="https://www.startech.com.bd/apple-ipad-11-inch-11th-gen?srsltid=AfmBOorkJdtI8jsx8EfdDZ55d70-a73mB-JvRP4i0NgLYanYPudhxYvo" target="_blank">
+<h1>Best Student Budget Ipad 🔥</h1>
+
+<h1>Price: 43999 TK Only</h1>
+
+<a href="https://www.startech.com.bd/apple-ipad-11-inch-11th-gen" target="_blank">
 
 <button>Buy Now</button>
 
@@ -80,6 +135,84 @@ button:hover{
 
 </div>
 
+<!-- OTHER PRODUCTS -->
+
+<div class="container">
+
+<!-- PRODUCT 1 -->
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1542751110-97427bbecf20?w=1000">
+
+<h2>Gaming Setup</h2>
+
+<p>Cool RGB Gaming Setup 😎</p>
+
+<a href="https://www.startech.com.bd/" target="_blank">
+
+<button>Buy Now</button>
+
+</a>
+
+</div>
+
+<!-- PRODUCT 2 -->
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=1000">
+
+<h2>Headphone</h2>
+
+<p>Gaming RGB Headphone 🔥</p>
+
+<a href="https://www.startech.com.bd/" target="_blank">
+
+<button>Buy Now</button>
+
+</a>
+
+</div>
+
+<!-- PRODUCT 3 -->
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1527814050087-3793815479db?w=1000">
+
+<h2>Gaming Mouse</h2>
+
+<p>Fast RGB Mouse 😎</p>
+
+<a href="https://www.startech.com.bd/" target="_blank">
+
+<button>Buy Now</button>
+
+</a>
+
+</div>
+
+<!-- PRODUCT 4 -->
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1511467687858-23d96c32e4ae?w=1000">
+
+<h2>Gaming Keyboard</h2>
+
+<p>RGB Mechanical Gaming Keyboard ⌨️🔥</p>
+
+<a href="https://www.startech.com.bd/" target="_blank">
+
+<button>Buy Now</button>
+
+</a>
+
+</div></div>
+
+</div>
+
 </body>
 
-</html>
+  </html>
